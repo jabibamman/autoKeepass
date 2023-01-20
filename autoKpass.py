@@ -5,8 +5,8 @@ import psutil as psutil
 
 
 def auto_keepass(password):
-    path = os.environ.get('Keepass')[:-11]
-    app = os.environ.get('Keepass')[-11:]
+    path = os.environ.get('KEEPASS_PATH')[:-11]
+    app = os.environ.get('KEEPASS_PATH')[-11:]
 
     if not is_keepass_open():
         os.startfile(path + app)
@@ -18,7 +18,7 @@ def auto_keepass(password):
 
 
 def is_keepass_open():
-    app = os.environ.get('Keepass')[-11:]
+    app = os.environ.get('KEEPASS_PATH')[-11:]
 
     for proc in psutil.process_iter():
         if proc.name() == app:

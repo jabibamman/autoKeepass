@@ -15,7 +15,6 @@ This script allows you to avoid typing your Keepass password every time, which s
 ```
 .\autoKeepass.ps1
 ```
-
 - Make you sure Keepass is not open in your tabs !
 
 Then you are finally done, you can easily run Keepass without typing your password ;)
