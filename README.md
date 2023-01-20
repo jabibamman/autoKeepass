@@ -7,9 +7,10 @@ This script allows you to avoid typing your Keepass password every time, which s
 
 > Make you sure you have already python and pip installed on your desktop.
 
--  You have to add  ```KEEPASS_PWD``` into your env variables like this
+-  You have to add  ```KEEPASS_PWD``` and ```KEEPASS_PATH``` into your env variables like this
 
 ```KEEPASS_PWD = yourKeepassPwd```
+```KEEPASS_PATH = your\\keepass\\Path\\KeePass.exe```
 
 - Next, you need to open your PowerShell terminal in the same directory as the project and type:
 ```
