@@ -1,2 +1,2 @@
 keyboard
-psutil
+psutil~=5.9.4

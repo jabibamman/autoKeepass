@@ -3,23 +3,22 @@ import time
 import keyboard
 import psutil as psutil
 
+app = os.environ.get('KEEPASS_PATH')[-11:]
+path = os.environ.get('KEEPASS_PATH')[:-11]
+
 
 def auto_keepass(password):
-    path = os.environ.get('KEEPASS_PATH')[:-11]
-    app = os.environ.get('KEEPASS_PATH')[-11:]
-
-    if not is_keepass_open():
+    app = 'KeePass.exe'
+    if not is_keepass_open(app):
         os.startfile(path + app)
-        time.sleep(1.5)
-        keyboard.write(password)
+        time.sleep(1.6)
+        keyboard.write(password, delay=0)
         keyboard.press_and_release('enter')
     else:
         print('[WARNING] Keepass is already open')
 
 
-def is_keepass_open():
-    app = os.environ.get('KEEPASS_PATH')[-11:]
-
+def is_keepass_open(app):
     for proc in psutil.process_iter():
         if proc.name() == app:
             return True

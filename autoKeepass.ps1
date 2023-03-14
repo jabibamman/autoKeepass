@@ -1,2 +1,2 @@
-pip install -r requirements.txt
+python depedencyInstaller.py
 python autoKpass.py
