@@ -1,5 +1,5 @@
 # Auto Keepass
-
+[![wakatime](https://wakatime.com/badge/user/e52bef9d-e298-4ffd-b606-f63f36526478/project/87614140-efcb-4d95-84fc-5769360e48b9.svg)](https://wakatime.com/badge/user/e52bef9d-e298-4ffd-b606-f63f36526478/project/87614140-efcb-4d95-84fc-5769360e48b9)
 ## Fast password fill for Keepass
 This script allows you to avoid typing your Keepass password every time, which saves time!
 
