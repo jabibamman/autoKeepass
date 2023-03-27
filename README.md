@@ -18,6 +18,12 @@ KEEPASS_PATH = yourKeepassPathTo/KeePass.exe
 ```
 .\autoKeepass.ps1
 ```
+
+- Otherwise, you can build the project to get an executable file :
+```
+python setup.py build
+```
+
 - Make you sure Keepass is not open in your tabs !
 
 Then you are finally done, you can easily run Keepass without typing your password ;)
