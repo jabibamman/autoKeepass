@@ -11,7 +11,7 @@ options = {
 setup(
     name = "AutoKeepass",
     options = options,
-    version = "1.0",
+    version = "1.0.5",
     description = 'keepass open',
     executables = executables
 )
